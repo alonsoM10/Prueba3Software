@@ -28,6 +28,13 @@ jobs:
           SONAR_ORG: ${{ secrets.SONAR_ORG }}
           SONAR_PROJECT_KEY: ${{ secrets.SONAR_PROJECT_KEY }}
 
+     # --- INYECTAR ESTE BLOQUE AQUÍ ---
+      - name: Instalar Node para Snyk y Herramientas
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      # ---------------------------------
+
       # 3. Snyk Security (Vulnerabilidades en dependencias)
       - name: Run Snyk Security Test
         run: |
