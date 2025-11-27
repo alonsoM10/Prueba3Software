@@ -1,4 +1,4 @@
-name: CI/CD Pipeline AutoPartss - Completo
+name: CI/CD Pipeline AutoPartss - Completo.
 
 on:
   push:
